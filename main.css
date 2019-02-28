@@ -137,7 +137,7 @@ body {
 
 .colophon {
   grid-area: colophon;
-}
+} 
 
 /* TEXT STYLES */
 
@@ -152,10 +152,6 @@ p {
   line-height: 1em;
 }
 
-.type2 {
-		font-family: "Montserrat-Regular", sans-serif;
-
-}
 
 /*lasvegashasfunaction*/
 a:link {
@@ -187,7 +183,7 @@ p {
 .intro {
   display: grid;
   grid-template-columns: 10% 75% 10%;
-  grid-template-rows: 20% 15% 45% 10%;
+  grid-template-rows: 10% 30% 45% 10%;
   grid-template-areas: "topb topb topb"
                       "emptl name emptr"
                       "emptl text emptr"
@@ -231,6 +227,7 @@ p {
   grid-template-areas: "emptl desc emptr"
                        "emptl img emptr";
   width: 100vw;
+  height: 50vh;
 
 }
 
