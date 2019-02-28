@@ -10,11 +10,6 @@
     src: url(type/CircularStd-Book.ttf);
 }
 
-@font-face {
-    font-family: CircularStd-BookItalic;
-    src: url(type/CircularStd-BookItalic.ttf);
-}
-
 a:hover {
     color: #958fc1;
 }
@@ -170,7 +165,8 @@ a:hover {
 
 /* media queries */
 
-@media (max-width: 1200px) {
+/* for ipads */
+@media (min-width: 451px) and (max-width: 1000px) {
 
 .body{
   font-size: 1.5em;
@@ -183,7 +179,73 @@ p {
 .intro {
   display: grid;
   grid-template-columns: 10% 75% 10%;
-  grid-template-rows: 5% 30% 45% 10%;
+  grid-template-rows: 10% 35% 45% 10%;
+  grid-template-areas: "topb topb topb"
+                      "emptl name emptr"
+                      "emptl text emptr"
+                      "scroll scroll scroll";                  
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.name {
+  grid-area: name;
+  font-size: 1.5em;
+
+}
+
+.text {
+  grid-area: text;
+  padding-top: 2%;
+  font-size: 1.5em;
+}
+
+.scroll {
+  grid-area: scroll;
+  text-align: center;
+  font-size: 16px;
+}
+
+.img {
+  grid-area: img;
+
+}
+
+.desc {
+  grid-area: desc;
+}
+
+.project{
+  display: grid;
+  grid-template-columns: 10% 75% 10%;
+  grid-template-rows: 45% 30%;
+  grid-template-areas: "emptl desc emptr"
+                       "emptl img emptr";
+  width: 100vw;
+
+}
+
+
+}
+
+
+/* for mobile phones */
+
+@media (max-width: 450px) {
+
+.body{
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 10% 75% 10%;
+  grid-template-rows: 10% 30% 45% 10%;
   grid-template-areas: "topb topb topb"
                       "emptl name emptr"
                       "emptl text emptr"
@@ -227,6 +289,8 @@ p {
   grid-template-areas: "emptl desc emptr"
                        "emptl img emptr";
   width: 100vw;
+  height: 50vh;
+
 }
 
 
