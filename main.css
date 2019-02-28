@@ -183,7 +183,7 @@ p {
 .intro {
   display: grid;
   grid-template-columns: 10% 75% 10%;
-  grid-template-rows: 10% 30% 45% 10%;
+  grid-template-rows: 5% 30% 45% 10%;
   grid-template-areas: "topb topb topb"
                       "emptl name emptr"
                       "emptl text emptr"
@@ -227,13 +227,7 @@ p {
   grid-template-areas: "emptl desc emptr"
                        "emptl img emptr";
   width: 100vw;
-  height: 50vh;
-
 }
 
 
-}
-
-a:focus {
-    color: #958fc1;
 }
