@@ -1,132 +1,229 @@
 <!DOCTYPE HTML>
+<meta charset="UTF-8">
+
 <html>
 <head>
     <title>alcancia-shaw</title>
     <link rel="stylesheet" type="text/css" href="main.css">
+
+    <!-- made with Vue.js :-) howdy y'all-->
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
+
 <link rel="icon" 
       type="image/png" 
       href="img/fav32.png" />
 </head>
 <body style="min-height: 100%;">
 </head>
-<body class="type2">
-
-<div class="topcorner">
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></div>
+<body>
 
 
-<div class="topcornerleft"><a href="http://alcanciashaw.com"><img src="img/smalllogo.png" class="cornerimage"></a></div>
+<!-- start Vue.JS -->
+<div id="app">
 
-<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-    <a href="#" onclick="closeNav()">About</a>
-    <a href="#interactive" onclick="closeNav()">Interactive</a>
-    <a href="#typography" onclick="closeNav()">Typography</a>
-    <a href="#print" onclick="closeNav()">Print</a>
-    <a href="#social" onclick="closeNav()">Social Media</a>
+<!-- main page with name and description! -->
+<a name="#"></a>
+
+<div class="intro">
+
+      <div class="name">
+            <span class="textback">alexandria<br>alcancia<br>shaw</span><br><br>
+            <p>
+                <a href="resume.pdf">Résumé<br>
+                <a href="https://www.instagram.com/alcanciashaw/">Instagram</a><br>
+                <a href="https://github.com/alcanciashaw">Github</a><br>
+                <a href="https://www.linkedin.com/in/alexandria-alcancia-shaw-7870ba100/">LinkedIn</a><br>
+            </p>
+    </div>
+
+    <div class="text">
+
+    <p>
+    is a designer and developer in Montreal, Canada with a special interest in web and print design. She will graduate from Concordia University in 2019, with a specialization in <a href="https://www.concordia.ca/finearts/design/programs/undergraduate/computation-arts-bfa.html">Computation Arts</a> and a minor in Computer Science. <br><br>She currently works as a research assistant for <a href="https://alicejarry.com/">Alice Jarry.</a>
+<br><br>She is loves her <a href="https://www.instagram.com/pepperpoodl/">tiny dog</a>, <a href="https://www.kawalingpinoy.com/sapin-sapin/">sapin sapin</a> and <a href="https://www.instagram.com/hiyakerrii/">variegated monsteras</a>. You can reach her at <span class="mailclass"><a href="mailto:alex@alcanciashaw.com">alex at alcanciashaw.com</a></span><br><br>
+    <br>
+    </p>
+    
+    </div>
+
+    <div class="scroll"><br><br>
+        Selected Works<br>2017 - Present<br><br>
+        <div class="vl"></div>
+
+    </div>
+
+</div>
+
+
+<!-- works and projects found below! -->
+
+
+<div class="works">
+
+    <!-- project #1 -->
+
+    <div class="project">
+
+      <!-- navigation bar sticky -->
+
+      <div id="navbar">
+            <a href="#"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             width="51.231px" height="122.282px" viewBox="0 0 51.231 122.282" enable-background="new 0 0 51.231 122.282"
+             xml:space="preserve">
+          <path d="M30.134,36.164c-1.477,2.521-3.225,4.246-5.246,5.174c-2.025,0.93-4.152,1.393-6.391,1.393
+            c-1.902,0-3.615-0.346-5.137-1.036c-1.525-0.688-2.809-1.652-3.855-2.89c-1.049-1.236-1.855-2.724-2.428-4.461
+            c-0.57-1.737-0.857-3.65-0.857-5.748c0-2.997,0.43-5.898,1.287-8.707c0.855-2.808,2.104-5.283,3.746-7.424
+            c1.641-2.142,3.678-3.865,6.104-5.175c2.426-1.309,5.234-1.963,8.424-1.963c2.425,0,4.496,0.56,6.208,1.677
+            c1.713,1.119,2.832,2.75,3.355,4.891h0.855l1.143-5.568h5.568l-6.283,29.409c-0.096,0.43-0.047,0.75,0.146,0.965
+            c0.188,0.213,0.449,0.32,0.783,0.32c0.332,0,0.666-0.117,1-0.356l2.57-1.854l2.998,4.211l-3.215,2.426
+            c-0.523,0.38-1.176,0.689-1.963,0.93c-0.785,0.236-1.582,0.355-2.391,0.355c-0.713,0-1.404-0.096-2.07-0.286
+            c-0.664-0.19-1.271-0.487-1.818-0.892c-0.549-0.404-0.99-0.928-1.32-1.57c-0.334-0.643-0.5-1.439-0.5-2.391
+            c0-0.24,0.012-0.477,0.035-0.716c0.023-0.236,0.059-0.473,0.107-0.712H30.134z M20.213,37.447c1.902,0,3.701-0.438,5.389-1.32
+            c1.689-0.88,3.164-2.08,4.425-3.605c1.26-1.521,2.248-3.317,2.963-5.388c0.713-2.07,1.072-4.319,1.072-6.747
+            c0-2.949-0.67-5.317-2-7.101c-1.334-1.785-3.404-2.677-6.21-2.677c-2.236,0-4.201,0.476-5.889,1.427
+            c-1.691,0.952-3.129,2.226-4.32,3.819c-1.189,1.594-2.082,3.438-2.676,5.532c-0.596,2.096-0.891,4.26-0.891,6.496
+            c0,3.141,0.689,5.521,2.068,7.138C15.523,36.639,17.545,37.447,20.213,37.447z"/>
+          <path d="M27.457,84.553c-0.951,0-1.937,0.121-2.96,0.357c-1.025,0.238-1.951,0.596-2.785,1.07c-0.832,0.477-1.51,1.084-2.033,1.822
+            c-0.525,0.736-0.785,1.605-0.785,2.605c0,1.521,0.678,2.664,2.035,3.426c1.355,0.762,3.697,1.262,7.031,1.498
+            c3.424,0.238,6.076,1.096,7.959,2.568c1.879,1.477,2.818,3.643,2.818,6.498c0,1.998-0.416,3.781-1.25,5.354
+            c-0.834,1.57-1.986,2.891-3.461,3.963c-1.475,1.068-3.225,1.879-5.248,2.426c-2.021,0.547-4.246,0.82-6.673,0.82
+            c-2.426,0-4.486-0.32-6.174-0.965c-1.689-0.641-3.082-1.498-4.176-2.568s-1.893-2.285-2.391-3.641
+            c-0.502-1.357-0.75-2.748-0.75-4.176c0-0.236,0-0.486,0-0.75c0-0.262,0.023-0.512,0.07-0.748l5.568-0.715
+            c-0.047,0.381-0.07,0.619-0.07,0.715s0,0.236,0,0.428c0,1.047,0.152,2.01,0.463,2.889c0.311,0.883,0.822,1.643,1.535,2.285
+            s1.643,1.156,2.783,1.535c1.143,0.381,2.545,0.57,4.211,0.57c1.096,0,2.227-0.129,3.39-0.391c1.166-0.262,2.225-0.666,3.178-1.213
+            c0.951-0.547,1.736-1.238,2.355-2.07c0.619-0.834,0.928-1.846,0.928-3.035c0-1.855-0.75-3.104-2.25-3.748
+            c-1.498-0.641-3.723-1.082-6.671-1.32c-3.379-0.236-6.031-1.047-7.961-2.426c-1.926-1.381-2.891-3.547-2.891-6.498
+            c0-1.664,0.359-3.209,1.07-4.639c0.715-1.428,1.725-2.652,3.035-3.676c1.309-1.023,2.877-1.82,4.711-2.393
+            c1.832-0.57,3.865-0.857,6.103-0.857c2.189,0,4.08,0.299,5.676,0.895c1.594,0.596,2.9,1.367,3.926,2.318
+            c1.023,0.953,1.783,2.035,2.283,3.248s0.748,2.463,0.748,3.748v0.787l-5.494,0.783v-0.285c0-0.096,0.012-0.178,0.035-0.25
+            c0.023-0.07,0.037-0.152,0.037-0.248c0-1.809-0.68-3.26-2.037-4.355C31.99,85.1,30.027,84.553,27.457,84.553z"/>
+          <g>
+            <path d="M6.184,59.449h37.98v5.141H6.184V59.449z"/>
+          </g>
+          </svg></a>
+          </div>
+
+      <!-- project #1 -->
+      
+      <div class="desc">
+            <span class="textback fadeInLeft">D/CART<br>LABS</span><p>web<br>2019</p><p><br>This website examines what is shared / borrowed in program spaces, specifically the three Concordia Design and Computation Arts Labs: the Computation Lab, the Sensor Lab and the Visual Communication Lab. </p><br>
+      </div>
+
+      <div class="img">
+
+          <img src="img/dcart.png" width="600px">
+      
+      </div>
+
+    </div>
+
+
+
+
+    <!-- project #2 -->
+
+    <div class="project">
+
+      <div class="desc">
+            <span class="textback fadeInLeft">LAB<br>MANUAL</span><p>print<br>in progress</p><p><br>A lab manual and guide to the D/CART Lab rooms with custom 3d printed stand. </p><br>
+      </div>
+
+      <div class="img">
+
+          <span class="textback">Coming soon!<br>Prochainement ! </a>
+      
+      </div>
+
+    </div>
+
+
+
+    <!-- project #3 -->
+
+    <div class="project">
+
+      <div class="desc">
+            <span class="textback fadeInLeft">Barometer</span><p>web<br>2019-in progress</p><p><br>A blog about trend forecasting and longevity.</p><br>
+      </div>
+
+      <div class="img">
+
+          <span class="textback">Coming soon!<br>Prochainement ! </a>
+
+      </div>
+
+    </div>
+
+        <!-- project #4 -->
+
+    <div class="project">
+
+      <div class="desc">
+            <span class="textback fadeInLeft">Melamina</span><p>typeface<br>2018</p><p><br>Melamina is a typeface inspired by melamine tablewear.</p><br>
+      </div>
+
+      <div class="img">
+
+          <img src="img/melamina.png" width="600px">
+      
+      </div>
+
+    </div>
+
+        <!-- project #5 -->
+
+    <div class="project">
+
+      <div class="desc">
+            <span class="textback fadeInLeft">Dijkstra</span><p>screenprinted book<br>2016</p><p><br>An edition of six screen printed informative pamphlets on Dijsktra's algorithm.</p><br>
+      </div>
+
+      <div class="img">
+
+          <img src="img/dij/03.JPG" width="600px">
+      
+      </div>
+
+    </div>
+
+        <!-- project #6 -->
+
+    <div class="project">
+
+      <div class="desc">
+            <span class="textback fadeInLeft">Apelyido</span><p>web<br>2017-in progress</p><p><br>Interactive web adaptation of Penelope Flores’ essay “How Filipinos Got Their Surnames”</p><br>
+      </div>
+
+      <div class="img">
+
+          <img src="img/apelyido/06.png" width="600px">
+      
+      </div>
+
+    </div>
+
+
   </div>
-</div>
 
-<div class="section group">
-    <div class="col span_2_of_2">
-        <div class="leftpad">
-        <div class="right gap">
+<div class="footer">
 
-
-        <h1>
-            <span class="textback fadeInLeft">Alexandria Alcancia-Shaw</span> is an interaction designer and developer in Montreal, with special interest in web and print design. She is currently a student at Concordia University, studying Computer Science and Computation Arts. She answers emails at <span class="mailclass"><a href="mailto:alex@alcanciashaw.com">alex@alcanciashaw.com</a></span>
-        </h1>
-
-
-            </div>
-        </div>
-    </div>
-
-        <div class="col span_1_of_3">
-
-        <h2><a name="interactive"><span class="textback">Interactive</span></a></h2>
-        
-        <a href="p/iiftimeline">
-        <p>IIF timeline</a><br>
-        web-based timeline</p>
-
-        <a href="p/bomsquad">
-        <p>BoM Squad</a><br>
-        ux/ui design, web application</p>
-
-        <a href="p/apelyido">
-        <p>apelyido</a><br>
-        website</p>
-
-
-
-    </div>
-
-    <br><br><br>
-
-    <div class="col span_1_of_3">
-
-        <h2><a name="typography"><span class="textback">Typography</span></a></h2>
-        
-        <a href="p/melamina">
-        <p>melamina</a><br>
-        typeface</p>
-
-        <a href="p/fuzzya">
-        <p>fuzzy a</a><br>
-        3D typography</p>
-
-       <!-- <a href="p/dijkstra.html">
-        <p>invasive species</a><br>
-        3D typography</p> -->
-
-    </div>
-
-        <br><br><br>
-
-    <div class="col span_1_of_3">
-
-        <h2><a name="print"><span class="textback">Print</span></a></h2>
-
-        <a href="p/dijkstra">
-        <p>dijkstra</a><br>
-        screenprinted booklet</p>
-
-        <a href="p/artificialgarden">
-        <p>artificial garden</a><br>
-        screenprinted book</p>
-
-        <!-- <a href="p/panghimagas.html">
-        <p>panghimagas</a><br>
-        booklet</p>-->
-
-    </div>
-
-
-    <div class="col span_2_of_2">
-        <a name="social">
-        <div class="bottom">
-            <a href="https://www.linkedin.com/in/alexandria-alcancia-shaw-7870ba100/"><span class="textback">linkedin</span></a> 
-            <a href="https://github.com/alcanciashaw"><span class="textback">github</span></a>
-
-        </div>
-    </a>
+    <div class="colophon">
+        <br>
+        <p>
+        Made with 💖 by moi in <a href="https://vuejs.org/">Vue.js</a><br>
+        Set in <a href="https://lineto.com/the+fonts/font+categories/text+fonts/circular/">Circular</a> & <a href="https://www.colophon-foundry.org/custom/spacemono/">Space Mono</a>
+        </p>
+        <br>
     </div>
 
 </div>
 
+</div>
+<script src="index.js"></script>
 
-
-<script>
-function openNav() {
-    document.getElementById("myNav").style.width = "100%";
-}
-
-function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-}
-</script>
-     
 </body>
+
 </html>
