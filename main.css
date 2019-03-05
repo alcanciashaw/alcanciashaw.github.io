@@ -28,8 +28,8 @@ body {
     border-image: 
     linear-gradient(
       to bottom, 
-      red, 
-      yellow) 1 100%;
+      orange, 
+      pink) 1 100%;
 
 }
 
@@ -79,6 +79,7 @@ body {
   padding-left: 30px;
   top: 0;
   display: inline;
+
 }
 
 #navbar a {
@@ -96,7 +97,6 @@ body {
 
 .works
 { 
-
 }
 
 .img {
@@ -120,8 +120,8 @@ body {
 
 .footer {
   display: grid;
-  grid-template-columns: 10% 80% 10%;
-  grid-template-areas: "emptl colophon emptr";
+  grid-template-columns: 10% 56% 20% 10%;
+  grid-template-areas: "emptl colophon socials emptr";
   left: 0;
   bottom: 0;
   width: 100%;
@@ -133,6 +133,51 @@ body {
 .colophon {
   grid-area: colophon;
 } 
+
+.socials {
+  grid-area: socials;
+}
+
+.footer a:link {
+  color: #fff;
+    text-decoration: underline;
+  -webkit-text-decoration-color: pink; /* Safari */  
+  text-decoration-color: pink;
+
+}
+
+.footer a:visited {
+  color: #fff;
+    text-decoration: underline;
+  -webkit-text-decoration-color: maroon; /* Safari */  
+  text-decoration-color: maroon;
+
+}
+
+/* individual page styles */
+
+
+.page {
+  display: grid;
+  grid-template-columns: 10% 30% 45% 10%;
+  grid-column-gap: 40px;
+  grid-template-rows: 20% 80%;
+  grid-template-areas: "topb topb pimg pimg"
+                      "emptl pdesc pimg pimg";                 
+  width: 100vw;
+  height: 100vh;
+}
+
+.pdesc {
+    grid-area: pdesc;
+
+}
+
+.pimg {
+  grid-area: pimg;
+
+}
+
 
 /* TEXT STYLES */
 
@@ -150,23 +195,30 @@ p {
 
 /*lasvegashasfunaction*/
 a:link {
-	color: red;
-	text-decoration: underline;
+  color: #000;
+    text-decoration: underline;
+  -webkit-text-decoration-color: red; /* Safari */  
+  text-decoration-color: red;
 }
 
 a:visited { 
-    color: orange;
+  color: #000;
+  text-decoration: underline;
+  -webkit-text-decoration-color: maroon; /* Safari */  
+  text-decoration-color: maroon;
 }
-
 a:hover {
-    color: maroon;
+  color: #000;
+      text-decoration: underline;
+  -webkit-text-decoration-color: maroon; /* Safari */  
+  text-decoration-color: maroon;
 }
 
 
 /* media queries */
 
 /* for ipads */
-@media (min-width: 451px) and (max-width: 1000px) {
+@media (min-width: 600px) and (max-width: 1025px) {
 
 .body{
   font-size: 1.5em;
@@ -179,13 +231,13 @@ p {
 .intro {
   display: grid;
   grid-template-columns: 10% 75% 10%;
-  grid-template-rows: 10% 35% 45% 10%;
+  grid-template-rows: 10% 20% 50% 10%;
   grid-template-areas: "topb topb topb"
                       "emptl name emptr"
                       "emptl text emptr"
                       "scroll scroll scroll";                  
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
 }
 
 
@@ -207,22 +259,45 @@ p {
   font-size: 16px;
 }
 
-.img {
-  grid-area: img;
-
-}
 
 .desc {
   grid-area: desc;
 }
 
+.img {
+  grid-area: img;
+
+}
+
 .project{
   display: grid;
   grid-template-columns: 10% 75% 10%;
-  grid-template-rows: 45% 30%;
+  grid-template-rows: 35% 65%;
   grid-template-areas: "emptl desc emptr"
                        "emptl img emptr";
   width: 100vw;
+  height: 70vh;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 10% 75% 10%;
+  grid-column-gap: 40px;
+  grid-template-rows: 20% 40% 40%;
+  grid-template-areas: "topb topb topb"
+                      "emptl pdesc emptl" 
+                      "emptl pimg emptl";                 
+  width: 100vw;
+  height: 100vh;
+}
+
+.pdesc {
+    grid-area: pdesc;
+
+}
+
+.pimg {
+  grid-area: pimg;
 
 }
 
@@ -245,13 +320,13 @@ p {
 .intro {
   display: grid;
   grid-template-columns: 10% 75% 10%;
-  grid-template-rows: 10% 30% 45% 10%;
+  grid-template-rows: 10% 10% 55% 10%;
   grid-template-areas: "topb topb topb"
                       "emptl name emptr"
                       "emptl text emptr"
                       "scroll scroll scroll";                  
   width: 100vw;
-  height: 100vh;
+  height: 50vh;
 }
 
 
@@ -293,5 +368,14 @@ p {
 
 }
 
+.pdesc {
+    grid-area: pdesc;
+
+}
+
+.pimg {
+  grid-area: pimg;
+
+}
 
 }
