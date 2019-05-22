@@ -17,6 +17,21 @@ export default new Router({
       component: () => import('./views/DCART.vue')
     },
     {
+      path: '/AlcanciaShaw',
+      name: 'AlcanciaShaw',
+      component: () => import('./views/AlcanciaShaw.vue')
+    },
+    {
+      path: '/Alice',
+      name: 'Alice',
+      component: () => import('./views/Alice.vue')
+    },
+    {
+      path: '/Bom',
+      name: 'Bom',
+      component: () => import('./views/Bom.vue')
+    },
+    {
       path: '/HiyaKerrii',
       name: 'HiyaKerrii',
       component: () => import('./views/HiyaKerrii.vue')
