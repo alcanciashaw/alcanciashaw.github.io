@@ -42,6 +42,11 @@ export default new Router({
       component: () => import('./views/Apelyido.vue')
     },
     {
+      path: '/TheStore',
+      name: 'TheStore',
+      component: () => import('./views/TheStore.vue')
+    },
+    {
       path: '/Dijkstra',
       name: 'Dijkstra',
       component: () => import('./views/Dijkstra.vue')

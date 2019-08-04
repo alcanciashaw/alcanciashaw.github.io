@@ -3,11 +3,18 @@
     <br><br>
     <span class="title">alexandria<br>alcancia<br>shaw</span><br><br>
 
-    <truncate action-class="customClass" clamp="More Information" :length="99" less="" type="html" text='is a designer and developer in Montréal, Canada. She has a special interest in web and print design.<br><br> She graduated from Concordia University in 2019, with a specialization in <a href="https://www.concordia.ca/finearts/design/programs/undergraduate/computation-arts-bfa.html" target="_blank">Computation Arts</a> and a minor in Computer Science.<br><br> She currently works as a research assistant for <a href="https://alicejarry.com/" target="_blank">Alice Jarry.</a> <br><br>You can reach her at <a href="mailto:alex@alcanciashaw.com">alex at alcanciashaw.com</a>
+    is a designer and developer in Montréal, Canada. She has a special interest in web and print design.<br><br> She graduated from Concordia University in 2019, with a specialization in <a href="https://www.concordia.ca/finearts/design/programs/undergraduate/computation-arts-bfa.html" target="_blank">Computation Arts</a> and a minor in Computer Science.<br><br> She currently works at <a href="https://www.autodesk.com/" target="_blank">Autodesk.</a> <br><br>You can reach her at <a href="mailto:alex@alcanciashaw.com">alex at alcanciashaw.com</a>
+
+    <br><br>
+
+    See her <a href="http://alcanciashaw.com/AlcanciaShawResume.pdf" target="_blank">Résumé</a>, her <a href="https://www.instagram.com/alcanciashaw/" target="_blank">Instagram</a>, her <a href="https://github.com/alcanciashaw" target="_blank">Github</a>.
+
+    <br><br><br><br>
+    
+    <!-- <truncate action-class="customClass" clamp="More Information" :length="600" less="" type="html" text='is a designer and developer in Montréal, Canada. She has a special interest in web and print design.<br><br> She graduated from Concordia University in 2019, with a specialization in <a href="https://www.concordia.ca/finearts/design/programs/undergraduate/computation-arts-bfa.html" target="_blank">Computation Arts</a> and a minor in Computer Science.<br><br> She currently works at <a href="https://www.autodesk.com/" target="_blank">Autodesk.</a> <br><br>You can reach her at <a href="mailto:alex@alcanciashaw.com">alex at alcanciashaw.com</a>
 
     <br><br>See her <a href="http://alcanciashaw.com/AlcanciaShawResume.pdf" target="_blank">Résumé</a>, her <a href="https://www.instagram.com/alcanciashaw/" target="_blank">Instagram</a>, her <a href="https://github.com/alcanciashaw" target="_blank">Github</a>.'></truncate>
-
-      <section class="works">
+    <section class="works">
         <section class="col">
 
           <section>
@@ -23,6 +30,13 @@
                 <span class="subtitle">DCART Labs</span>
                 <router-link to="/dcart"><span class="arrows">View Process →</span></router-link>
                 <br>Web design & Development · 2019<br><br>
+          </section>
+
+          <section>
+                <img src="@/assets/img/dcartp.png"><br><br>
+                <span class="subtitle">The Store</span>
+                <router-link to="/dcart"><span class="arrows">View Process →</span></router-link>
+                <br>Unity · 2019<br><br>
           </section>
 
           <section>
@@ -94,10 +108,13 @@
       </section>
     </section>
 
+  -->
+
   </div>
 </template>
 
 <script>
+
 import truncate from 'vue-truncate-collapsed'
 
 export default {
